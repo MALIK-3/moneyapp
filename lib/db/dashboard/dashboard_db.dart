@@ -53,6 +53,7 @@ class DashboardDB implements DashboardDbFunctions {
         if (dashboardAmt.type == CategoryType.income) {
           List<double> _incomeAmount = [dashboardAmt.amount];
           double _sumIncome = _incomeAmount.fold(0, (acc, val) => acc + val);
+          // incomeAmountListListner.value.add(_sumIncome);
           // double _sumIncome = _incomeAmount.fold(0, (acc, val) => acc + val);
           // print(_incomeAmount.fold(0, (acc, val) => acc + val));
         } else {
